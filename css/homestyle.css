@@ -1,0 +1,221 @@
+html {
+    /* font-size: 10px; */
+    font-family:"Roboto+Slab"; 
+    /* font-size:24px; */
+    /* background-color: #fefae0; */
+    background: linear-gradient(#e9edc9, #faedcd);
+    scroll-behavior: smooth;
+}
+
+/* Top Right Navigation Button --------------------------------------------------------------------------------- */
+
+.navbar {
+    z-index: 9999;
+    position:fixed;
+    right:20%;
+    width: 330px;
+    border-radius: 50px;
+    
+    font-family: Roboto Slab;
+
+    top:5%;
+    
+    background-color: #D4A373;
+
+    animation:fade-down 2s;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline;
+    /* text-align: center; */
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 20px; */
+}
+
+.button {
+    font-family: Roboto Slab;
+    background-color:#D4A373;
+    color: black;
+    border:none;
+    
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* display: inline-block; */
+    
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button:hover {
+    color:black;
+    text-shadow: 2px 1px 2px lightgray;
+    /* text-decoration: underline; */
+}
+
+.button:hover:after {
+    opacity: 1;
+}
+
+.button:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: black;
+    position: absolute;
+
+    left: 0;
+    bottom: -15px;
+
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+/* End of Top Right Navigation Button --------------------------------------------------------------------------------- */
+
+body {
+    text-align:left;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:5%;
+    margin-bottom:5%;
+
+    font-family: Roboto Slab;
+
+    /* animation: fade-right 1s; */
+}
+
+body ul {
+    padding: 0%;
+}
+
+.more_ahead {
+    /* margin-right: 20%; */
+    /* justify-content: right; */
+    /* text-align:center; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20%;
+    position: relative;
+    text-align: center;
+
+    font-size:20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end;
+    margin-right: 25%; */
+    
+}
+
+.contact input {
+    width: 300px;
+}
+
+.contact input, textarea {
+    height:30px;
+    font-size:18px;
+    background-color: #CCD5AE;
+    margin-bottom: 10px;
+    border:none;
+}
+
+.submit_button {
+    font-family: Roboto Slab;
+    background-color:#D4A373;
+    color: black;
+    border:none;
+    
+    font-size: 20px;
+    position: relative;
+    left: 425px;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    background-color:#c4803e;
+}
+
+h1 {
+    font-size:54px;
+    font-weight:bold;
+    /* padding: 0%; */
+    margin: 0%;
+    
+}
+h2 {
+    font-size:24px;
+    text-align: left;
+    font-weight:normal;
+    padding: 0%;
+    margin: 0%;
+}
+hr {
+    border-color: #CCD5AE;
+    color: #CCD5AE;
+    display:block;
+}
+
+
+body ul li {
+    display: inline;
+    text-align: left;
+    padding-right: 20px;
+}
+
+li {
+    display:inline;
+}
+
+
+
+footer {
+    /* position:fixed; */
+    bottom: 5%;
+    text-align: center;
+}
+
+.vertical-line {
+    position:relative;
+    width: 2px;
+    height: 250px;
+    background:#CCD5AE;;
+    /* margin-right: 20px; */
+    border-color: #CCD5AE;
+    color: #CCD5AE;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.fade {
+    opacity: 1;
+}
