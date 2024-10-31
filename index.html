@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Tyler Yuen</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href = "css/homestyle.css" rel = "stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "js/homescript.js"></script>
+    </head>
+
+    <header>
+        
+        <div class = "navbar">
+            <ul>
+                <li><button class = "button" onclick="foo()">Home</button></li>
+                <li><button class = "button" onclick="foo()">Resume</button></li>
+                <li><button class = "button" onclick="foo()">Contact</button></li>
+            </ul>
+        </div>
+
+        
+    </header>
+    <body>
+        <div class="fade">
+            <div class="name">
+                <h1>Tyler Yuen</h1>
+                <h2>Undergraduate Senior at UIC</h2>
+                <ul>
+                    <li class="fa fa-linkedin-square" style="font-size:45px"></li>
+                    <li class="fa fa-github" style="font-size:45px"></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="section_one" style="padding-bottom: 50px;">
+            <h3 style="font-size:20px">#01 About Me</h3>
+            <div style = "display: flex; align-items: flex-start;">
+                <div class="vertical-line" id="about" style="margin-right:20px"></div>
+                <p style = "margin: 0; font-size:18px;">
+                    I am a current undergraduate senior at the Univeristy<br>
+                    of Illinois at Chicago (UIC) studying for a Bachelor's in<br>
+                    Computer Science. My interests revolve around<br>
+                    software engineering and data science.<br><br>
+                    
+                    In my free time, I enjoy chasing healthy lifestyles, such<br>
+                    as working out at the gym and rock climbing. I also<br>
+                    like to delve into classical music through playing the<br>
+                    piano
+                </p>
+                <div class="vertical-line" id="about" style = "margin-left: 20px;"></div>
+            </div>
+        </div>
+
+        <div class="more_ahead">
+            <h4 style = "color: #D4A373;">more ahead!</h4>
+            <div class="vertical-line" id="about" style="margin-right: 55px;"></div>
+        </div>
+
+        <div class ="contact">
+            <h3 style="font-size:20px">#02 Send Me a Message!</h3>
+            <h5 style ="margin-right: 115px; font-size:18px; margin: 0;">Full name</h5>
+            <input type="text" id="name" name="test" style="margin-top: 5px;" placeholder="Enter your full name">
+            
+            <h5 style ="margin-right: 115px; font-size:18px; margin: 0;">Email Address</h5>
+            <input type="text" id="email" name="test" style="margin-top: 5px;" placeholder="example@domain.com">
+
+            <h5 style ="margin-right: 115px; font-size:18px; margin: 0;">Subject Header</h5>
+            <input type="text" id="name" name="test" style="margin-top: 5px;" placeholder="Inquiry">
+
+            <h5 style ="margin-right: 115px; font-size:18px; margin: 0;">Message</h5>
+            <textarea id="message" name="test" style="margin-top: 5px; width: 500px; height:250px" placeholder="Enter the message body here"></textarea>
+
+            <li><button class = "submit_button" onclick="foo()">Submit</button></li>
+        </div>
+    
+
+        
+        
+    </body>
+
+    <footer>
+        <ul class = "footer">
+            <li>&copy; 2024 Tyler Yuen</li>
+            <li><button class = "button" onclick="foo()">Back to top</button></li>
+        </ul>
+    </footer>
+</html>
